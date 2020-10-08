@@ -11,8 +11,12 @@ public class PanelChanger : MonoBehaviour
     public GameObject backArrow;
     string currentPanelStr = "Panel0";
 
+    //アイテムボックスの表示・非表示
+    public GameObject itemBox;
+
     private void Start(){
         HideArrow();
+        itemBox.SetActive(true);
     }
     void HideArrow(){
         rightArrow.SetActive(false);
@@ -116,7 +120,7 @@ public class PanelChanger : MonoBehaviour
     }
     public void OnStatu(){
         HideArrow();
-
+        itemBox.SetActive(false);
         this.transform.localPosition=new Vector2(-7000,1000);
         currentPanelStr = "Panel5";
     }
