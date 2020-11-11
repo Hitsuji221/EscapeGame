@@ -10,9 +10,10 @@ public class Item : MonoBehaviour
     //タイミング：クリックしたとき
     //処理：アイテムボックスに格納され、非表示になる
     public enum Type{
-        Water=0,
+        Map=0,
         Key=1,
-        Key2=2
+        Water=2,
+        Key2=3
     }
 
     public Type type;

@@ -19,10 +19,10 @@ public class StomacGirl : MonoBehaviour
             //処理：新たなアイテムゲット
             keyImage.SetActive(true);
             alert2Text.SetActive(true);
-            ItemBox.instance.SetItem(Item.Type.Key);            
-            Debug.Log(Item.Type.Key+"を取得");
+            ItemBox.instance.SetItem(Item.Type.Key2);            
+            Debug.Log(Item.Type.Key2+"を取得");
             
-            bool hasItem2 = ItemBox.instance.CanUseItem(Item.Type.Key); //TODO:アイテムBoxにペットボトルがあるか　=>　ItemとItemBoxをつくる
+            bool hasItem2 = ItemBox.instance.CanUseItem(Item.Type.Key2); //TODO:アイテムBoxにペットボトルがあるか　=>　ItemとItemBoxをつくる
             if(hasItem2== true){   
                 stomacImage.SetActive(false);
             }
