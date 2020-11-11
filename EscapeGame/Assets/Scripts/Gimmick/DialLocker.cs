@@ -25,9 +25,9 @@ public class DialLocker : MonoBehaviour
 
     Mark[] clearMarks =
     {
+        Mark.Hosi,
         Mark.Maru,
         Mark.Sankaku,
-        Mark.Hosi,
     };
 
     public UnityEvent ClearedAction;//クリアした時に実行したいことを登録する(外部用)
@@ -42,9 +42,9 @@ public class DialLocker : MonoBehaviour
     }
 
     bool IsClear(){
-        if(currentMarks[0] == clearMarks[0]
-        && currentMarks[1] == clearMarks[1]
-        && currentMarks[2] == clearMarks[2]){
+        if(currentMarks[1] == clearMarks[1]
+        && currentMarks[2] == clearMarks[2]
+        && currentMarks[0] == clearMarks[0]){
             return true;
         }
         return false;
